@@ -6,10 +6,26 @@ POST http://localhost:9000/api HTTP/1.1
 Content-Type: application/json
 
 {
-    "titulo": "los 7 habitos d elas personas altamente efectivas",
-    "autor": "Stephen Covey",
-    "edicion": 7
-}
+    "code": "999999",
+    "idDeviceType": 1,
+    "brand": "Lenovo",
+    "model": "M800",
+    "serialNumber": "TN45GGR45",
+    "macNumber": null,
+    "status": 1,
+    "location": "Oficina",
+    "notes": "N/A",
+    "serviceTag": "TR45TR",
+    "dedicatedVideo": 0,
+    "videoMemory": 32,
+    "processorName": "Intel i5 - 7300U",
+    "memoryType": "DDR4 PC4-15500S",
+    "memoryCapacity": 8,
+    "storageType": "SATA SSD",
+    "storageCapacity": 256,
+    "screenSize": 0,
+    "idEquipment": null
+  }
 
 ###
 DELETE http://localhost:9000/api/2 HTTP/1.1

@@ -1,6 +1,7 @@
 const express = require('express')
 const mysql = require('mysql')
-const myconn = require('express-myconnection')
+const myconn = require('express-myconnection');
+const cors = require('cors');
 
 const routes = require('./routes')
 
@@ -10,13 +11,15 @@ const dbOptions = {
     host: 'localhost',
     port: 3306,
     user: 'root',
-    password: 'abc123',
-    database: 'library'
+    password: '123456',
+    database: 'sigac_db'
 }
 
 // middlewares -------------------------------------
-app.use(myconn(mysql, dbOptions, 'single'))
-app.use(express.json())
+app.use(myconn(mysql, dbOptions, 'single'));
+app.use(express.json());
+app.use(cors());
+
 
 // routes -------------------------------------------
 app.get('/', (req, res)=>{
